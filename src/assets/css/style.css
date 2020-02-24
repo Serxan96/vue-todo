@@ -1,0 +1,37 @@
+.block {
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10), 0 2px 10px rgba(0,0,0,.15);
+}
+
+.form-area__title h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #007bff;
+}
+
+.product-list ul li a:not(.btn) {
+    color: #333333;
+    text-decoration: none;
+}
