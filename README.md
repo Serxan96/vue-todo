@@ -1,6 +1,6 @@
 # vue-todo
 
-> Vue Todo (vue-router, vuex, vuelidate)
+> Vue Todo (vue-router, vuex, vuelidate, axios)
 
 ## Build Setup
 
