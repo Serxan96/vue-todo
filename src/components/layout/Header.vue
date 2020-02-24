@@ -12,6 +12,9 @@
                         <router-link class="nav-item" tag="li" to="/" exact>
                             <a class="nav-link" href="#">Home</a>
                         </router-link>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Serxan96/vue-todo" target="_blank">Github</a>
+                        </li>
                         <li class="nav-item" v-if="isAuth">
                             <a class="nav-link" href="#" @click.prevent="logout">Logout</a>
                         </li>
