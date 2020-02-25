@@ -70,7 +70,11 @@ const actions = {
     removeProduct(context, product){
         axios.delete(`${requestUrl}/products/${product.key}.json`)
             .then(res => {
-                // remove product
+                let products = context.getters.getProducts;
+                products.splice(product.index, 1);
+
+                let reverseProducts = products.slice().reverse();
+                context.commit('setProducts', reverseProducts);
             })
     },
 

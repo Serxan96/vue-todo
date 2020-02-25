@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <div class="empty-block" v-else>
-                            <span>There is no products...</span>
+                            <span>No product...</span>
                         </div>
                     </div>
                 </div>
@@ -38,8 +38,10 @@
         methods: {
             removeProduct(index, product){
                 if(confirm('Are you sure?')){
-                    this.$store.dispatch('removeProduct', product);
-                    this.$refs.product[index].remove();
+                    this.$store.dispatch('removeProduct', {
+                        index,
+                        ...product
+                    });
                 }
             }
         }
