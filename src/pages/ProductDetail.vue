@@ -24,9 +24,19 @@
         computed: {
             ...mapGetters(['getProductDetail'])
         },
+        methods: {
+            clearProductDetail(){
+                this.getProductDetail.name = '';
+                this.getProductDetail.price = '';
+                this.getProductDetail.desc = '';
+            }
+        },
         created(){
             this.$store.dispatch('fetchProductDetail', this.$route.params.id);
         },
+        beforeDestroy(){
+           this.clearProductDetail();
+        }
     }
 </script>
 
